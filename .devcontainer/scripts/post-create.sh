@@ -23,7 +23,7 @@ done
 echo "==> Installing Python packaging tools"
 python3 -m venv venv
 ./venv/bin/python3 -m pip install --upgrade pip
-./venv/bin/python3 -m pip install maturin
+./venv/bin/python3 -m pip install h5py maturin
 
 echo "==> Toolchain versions"
 rustc --version
