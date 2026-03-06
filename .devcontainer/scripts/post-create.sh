@@ -22,8 +22,8 @@ done
 
 echo "==> Installing Python packaging tools"
 python3 -m venv venv
-./venv/bin/python3 -m pip install --user --upgrade pip
-./venv/bin/python3 -m pip install --user maturin
+./venv/bin/python3 -m pip install --upgrade pip
+./venv/bin/python3 -m pip install maturin
 
 echo "==> Toolchain versions"
 rustc --version
