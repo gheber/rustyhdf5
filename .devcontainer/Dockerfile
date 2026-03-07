@@ -18,6 +18,7 @@ RUN apt-get update \
         python3-numpy \
         python3-h5py \
         python3-pytest \
+        python3-maturin \
         libssl-dev \
         clang \
         lld \
