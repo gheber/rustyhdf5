@@ -20,17 +20,12 @@ for target in "${RUST_TARGETS[@]}"; do
     rustup target add "${target}"
 done
 
-echo "==> Installing Python packaging tools"
-python3 -m venv venv
-./venv/bin/python3 -m pip install --upgrade pip
-./venv/bin/python3 -m pip install h5py maturin
-
 echo "==> Toolchain versions"
 rustc --version
 cargo --version
 cargo fmt --version
 cargo clippy --version
-./venv/bin/python3 --version
+python3 --version
 
 echo "==> Verifying workspace metadata"
 cargo metadata --no-deps >/dev/null
